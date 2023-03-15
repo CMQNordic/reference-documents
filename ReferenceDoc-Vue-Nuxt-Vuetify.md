@@ -1,5 +1,4 @@
 <h1 id="vue-nuxt-vuetify">Reference Guide - Vue & Nuxt & Vuetify</h1>
-<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 This is a reference document with usefull information about Vue, Nuxt and Vuetify. 
 Written while learning for educational purposes and for quick reference and look-up.
@@ -9,6 +8,7 @@ Written while learning for educational purposes and for quick reference and look
 
 ---
 <p id="table-of-content"></p>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 #### [**TABLE OF CONTENT**](#)
 

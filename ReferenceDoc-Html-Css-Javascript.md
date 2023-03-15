@@ -1,5 +1,4 @@
 <h1 id="html-css-javascript">Reference Guide -  Html, Css & Javascript </h1>
-<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 This is a reference document with usefull information about html, css and javascript.
 Written while learning for educational purposes and for quick reference and look-up.
@@ -9,6 +8,7 @@ Written while learning for educational purposes and for quick reference and look
 
 ---
 <p id="table-of-content"></p>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 #### **TABLE OF CONTENT**
 -   **JavaScript**
