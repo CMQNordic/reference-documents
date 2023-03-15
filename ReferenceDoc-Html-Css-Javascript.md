@@ -1,14 +1,10 @@
 <h1 id="html-css-javascript">Reference Guide -  Html, Css & Javascript </h1>
 
-Document created when refreshing my skills and an aid for quick look-up. This reference guide was written with love and broken english, for myself, by myself, for educational purposes and for fun. 
-<br> <br>
+This is a reference document with usefull information about html, css and javascript. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
 
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
-<nav>
-
 ---
-
 <p id="table-of-content"></p>
 
 #### **TABLE OF CONTENT**
@@ -23,9 +19,6 @@ Document created when refreshing my skills and an aid for quick look-up. This re
 
 -   [**General**](#javascript)
 -   [File structure](#file-structure) ◦ [Display and position](#display-and-position)
-
-</nav>
-
 
 # [**Java Script**](#)
 

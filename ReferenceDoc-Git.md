@@ -1,14 +1,11 @@
 <h1 id="git">Reference Guide - Git</h1>
 
-What is git? How to use the most common git commands? Look up things. This reference guide for git was written with love and broken english, for myself, and by myself, for educational purposes and for fun.
-<br>
-<br>
-<br>
-<p align=right>Written by Martin Czerwinski ®CMQ Nordic AB | March 2020</p>
+This is a reference document with usefull information aboutgit. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
 
-<nav>
+<p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
    
 ---
+<p id="table-of-content"></p>
 
 ### **TABLE OF CONTENT**
 

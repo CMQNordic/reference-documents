@@ -1,12 +1,13 @@
 <h1 id="web-development">Reference Guide - Web Development</h1>
 
-This is a reference document with usefull information about web development in general. Written by myself, for myslef, while learning for educational purposes and for fun. <br> <br>
+This is a reference document with usefull information about web development in general. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
 
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
 ---
+<p id="table-of-content"></p>
 
-<h1 id="table-of-content" >TABLE OF CONTENT</h1>
+#### **TABLE OF CONTENT**
 
 -  [**VSCode**](#visual-studio-code)
 [Whats's built-in](#what-is-vscode) ◦ [Extensions](#useful-extensions-in-vscode) ◦ [Shortcuts](#useful-shortcuts-in-vscode) ◦ [Snippets](#snippets-in-vscode) ◦ [Terminal](#terminal-in-vscode) ◦ [Intellisense](#intellisense-in-vscode) ◦ [Settings and Code formatting](#settings-and-formatting)

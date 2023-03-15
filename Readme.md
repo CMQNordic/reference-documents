@@ -9,4 +9,4 @@ Written by Martin Czerwinski for learning, and future reference 👀
 
 - [Git](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Git.md#git)
 
-- [Powerquery](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceGuide-PowerQuery.md#power-query) 
+- [Powerquery](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceGuide-PowerQuery.md#power-query-m) 

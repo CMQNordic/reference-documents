@@ -1,5 +1,5 @@
 
-<h1>Reference Guide - Power Query M</h1>
+<h1 id="power-query-m">Reference Guide - Power Query M</h1>
 ---
 By&nbsp;Martin&nbsp;Czerwinski [CMQ&nbsp;Nordic&nbsp;AB](www.cmq.se "www.cmq.se (Martin Czerwinski @ CMQ Nordic AB)")®&nbsp;March&nbsp;2020&nbsp;
 

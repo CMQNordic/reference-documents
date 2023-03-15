@@ -1,13 +1,10 @@
 <h1 id="vue-nuxt-vuetify">Reference Guide - Vue & Nuxt & Vuetify</h1>
 
-This document helps you to refresh your Vue skills and can also be used for quick look-ups. This reference guide was written with love and broken english, for myself, by myself as notes for myself, educational purposes and just for for fun.
+This is a reference document with usefull information about Vue, Nuxt and Vuetify. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
 
-<p align=right>Written b!!"!"y Martin Czerwinski ®CMQ Nordic AB</p>
-
-<nav>
+<p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
 ---
-
 <p id="table-of-content"></p>
 
 #### [**TABLE OF CONTENT**](#)
@@ -27,11 +24,9 @@ This document helps you to refresh your Vue skills and can also be used for quic
   [**►  UI FRAMEWORKS**](#ui-frameworks) 
  [Vuetify](#vuetify) ◦ [Tailwind](#tailwind) ◦ [Bootstrap-5/Vue-Bootstrap](#)
   
-  
-
 <br>
 
-**RECCOMENDED to read, understand and apply in daily work:**
+**RECOMMENDED to read, understand and apply in daily work:**
 
 - [Coding in large projects](https://www.telerik.com/blogs/10-good-practices-building-maintaining-large-vuejs-projects)
 - [Layouts with Vue](https://markus.oberlehner.net/blog/dynamic-vue-layout-components/)
