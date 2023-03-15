@@ -1,12 +1,14 @@
-## Reference Documents
-Written by Martin Czerwinski for learning, and future reference 👀
 
-- [Web development](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Web-development.md#web-development)
+# Reference Documents
 
-- [Html, Css and Javascript](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Html-Css-Javascript.md#html-css-javascript)
+_Written by Martin Czerwinski for learning, and future reference 👀_
 
-- [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#vue-nuxt-vuetify)
+🔶 [Web development](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Web-development.md#web-development)
 
-- [Git](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Git.md#git)
+🔶 [Html, Css and Javascript](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Html-Css-Javascript.md#html-css-javascript)
 
-- [Powerquery](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceGuide-PowerQuery.md#power-query-m) 
+🔶 [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#vue-nuxt-vuetify)
+
+🔶 [Git](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Git.md#git)
+
+🔶 [Powerquery](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceGuide-PowerQuery.md#power-query-m) 
