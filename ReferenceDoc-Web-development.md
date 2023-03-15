@@ -1,4 +1,5 @@
 <h1 id="web-development">Reference Guide - Web Development</h1>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 This is a reference document with usefull information about web development in general.
 Written while learning for educational purposes and for quick reference and look-up.

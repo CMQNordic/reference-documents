@@ -1,7 +1,7 @@
 
 
 <h1 id="git">Reference Guide - Git</h1>
-<p align=right><a align=right href="#https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 
 This is a reference document with usefull information about git. 

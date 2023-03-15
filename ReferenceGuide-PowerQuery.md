@@ -1,5 +1,6 @@
 
 <h1 id="power-query-m">Reference Guide - Power Query M</h1>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ main menu</a></p>
 
 This is a reference document with usefull information about Power query and m language.
 Written while learning for educational purposes and for quick reference and look-up.
