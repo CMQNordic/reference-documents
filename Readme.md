@@ -5,7 +5,7 @@ Written by Martin Czerwinski for learning, and future reference 👀
 
 - [Html, Css and Javascript](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Html-Css-Javascript.md#html-css-javascript)
 
-- [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#vue--nuxt--vuetify)
+- [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#vue-nuxt-vuetify)
 
 - [Git](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Git.md#git)
 

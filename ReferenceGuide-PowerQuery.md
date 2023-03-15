@@ -1,5 +1,5 @@
 
-## ___Power&nbsp;Query&nbsp;M&nbsp;language -&nbsp;Ultimate&nbsp;Reference&nbsp;Guide&nbsp;-___
+<h1>Reference Guide - Power Query</h1>
 ---
 By&nbsp;Martin&nbsp;Czerwinski [CMQ&nbsp;Nordic&nbsp;AB](www.cmq.se "www.cmq.se (Martin Czerwinski @ CMQ Nordic AB)")®&nbsp;March&nbsp;2020&nbsp;
 

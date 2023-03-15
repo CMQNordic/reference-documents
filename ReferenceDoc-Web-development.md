@@ -1,4 +1,4 @@
-<h1 id="web-development">Reference Guide - Web Development </h1>
+<h1 id="web-development">Reference Guide - Web Development</h1>
 
 This is a reference document with usefull information about web development in general. Written by myself, for myslef, while learning for educational purposes and for fun. <br> <br>
 
