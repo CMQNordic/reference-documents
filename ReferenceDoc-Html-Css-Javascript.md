@@ -1,7 +1,9 @@
 <h1 id="html-css-javascript">Reference Guide -  Html, Css & Javascript </h1>
 
-This is a reference document with usefull information about html, css and javascript. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
-
+This is a reference document with usefull information about html, css and javascript.
+Written while learning for educational purposes and for quick reference and look-up.
+<br>
+<br>
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
 ---

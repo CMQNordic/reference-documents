@@ -1,7 +1,9 @@
 <h1 id="git">Reference Guide - Git</h1>
 
-This is a reference document with usefull information aboutgit. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
-
+This is a reference document with usefull information about git. 
+Written while learning for educational purposes and for quick reference and look-up. 
+<br> 
+<br>
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
    
 ---

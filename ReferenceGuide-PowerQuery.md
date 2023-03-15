@@ -1,19 +1,14 @@
 
 <h1 id="power-query-m">Reference Guide - Power Query M</h1>
+
+This is a reference document with usefull information about Power query and m language.
+Written while learning for educational purposes and for quick reference and look-up.
+<br>
+<br>
+<p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 ---
-By&nbsp;Martin&nbsp;Czerwinski [CMQ&nbsp;Nordic&nbsp;AB](www.cmq.se "www.cmq.se (Martin Czerwinski @ CMQ Nordic AB)")®&nbsp;March&nbsp;2020&nbsp;
 
----
-
-__M__ is the powerful language behind __Power Query__ helping to import, change and restructure big amounts of data. It's hidden behind the graphical interface of __Power Query Editor__ that is designed for "non-programmers". We still recommend to spend some time to understand the M syntax and how M works. There are many powerful operations to perform with M that you are not able of doing through its graphical interface.
-
-This is __compact tutorial__, an __reference guide__ or a __cheat-sheet__ that explains basics of M, its syntax and through some advanced examples gives you deep understanding and solution to some problems that every Power Query developer at some point get stuck with. 
-
-Bookmark this page, share it and feel free to [__reach out to us__](www.cmq.se "Contact us!") with questions, comments or requests for assignments!
-
-_Prerequisites: Some excel & programing skills._
-
----
+<p id="table-of-content"></p>
 
 #### __TABLE OF CONTENT__
 
@@ -53,6 +48,14 @@ _Prerequisites: Some excel & programing skills._
 <br>
 
 ### __[Basics to know]()__
+
+__M__ is the powerful language behind __Power Query__ helping to import, change and restructure big amounts of data. It's hidden behind the graphical interface of __Power Query Editor__ that is designed for "non-programmers". We still recommend to spend some time to understand the M syntax and how M works. There are many powerful operations to perform with M that you are not able of doing through its graphical interface.
+
+This is __compact tutorial__, an __reference guide__ or a __cheat-sheet__ that explains basics of M, its syntax and through some advanced examples gives you deep understanding and solution to some problems that every Power Query developer at some point get stuck with. 
+
+Bookmark this page, share it and feel free to [__reach out to us__](www.cmq.se "Contact us!") with questions, comments or requests for assignments!
+
+_Prerequisites: Some excel & programing skills._
 
 
 Let's go though core and basic areas of Power Query M language, some commonly used expressions and dig into few solutions that we think are very beneficial to all M developers to understand. We start with basics and move forward with more and more advanced stuff.

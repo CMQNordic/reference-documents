@@ -1,7 +1,9 @@
 <h1 id="vue-nuxt-vuetify">Reference Guide - Vue & Nuxt & Vuetify</h1>
 
-This is a reference document with usefull information about Vue, Nuxt and Vuetify. Written while learning for educational purposes and for quick reference and look-up. <br> <br>
-
+This is a reference document with usefull information about Vue, Nuxt and Vuetify. 
+Written while learning for educational purposes and for quick reference and look-up.
+<br>
+<br>
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
 ---
