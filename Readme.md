@@ -1,10 +1,12 @@
 ## Reference Documents
 Written by Martin Czerwinski for learning, and future reference 👀
 
-- Web developemnt
+- [Web development](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Web-development.md#web-development)
 
-- [Html, Css and Javascript](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Html-Css-Javascript.md#reference-guide----html-css--javascript-)
+- [Html, Css and Javascript](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Html-Css-Javascript.md#html-css-javascript)
 
-- [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#reference-guide---vue--nuxt--vuetify)
+- [Vue, Nuxt and Vuetify](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Vue-Nuxt-Vuetify.md#vue--nuxt--vuetify)
+
+- [Git](https://github.com/CMQNordic/reference-documents/blob/main/ReferenceDoc-Git.md#git)
 
 - 
