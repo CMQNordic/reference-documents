@@ -2,17 +2,17 @@
 
 This is a reference document with usefull information about Vue, Nuxt and Vuetify. 
 Written while learning for educational purposes and for quick reference and look-up.
-<br>
+
 <br>
 <p align=right>Written by Martin Czerwinski ®CMQ Nordic AB</p>
 
 ---
 <p id="table-of-content"></p>
-<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ Main menu</a></p>
+<p align=right><a align=right href="https://github.com/CMQNordic/reference-documents#reference-documents">↩ Back to Main Menu</a></p>
 
 #### [**TABLE OF CONTENT**](#)
 
- [**►Comparison**: Vite - Vue - Nuxt - Vuetify](#comparison)
+ [**🔶 General info:**: Vite - Vue - Nuxt - Vuetify](#comparison)
   [**🔶 VUE**](#vue)
   [Get started](#get-started-with-vue) ◦ [Rendering modes](#vue-rendering-modes) ◦ [Project structure](#vue-project-structure)  ◦ [Composition API](#vue-composition-api) ◦ [Variables and styling](#vue-style)
   **Syntax:** [Directives](#vue-directives) ◦ [Properties](#vue-properties) ◦ [Methods vs.Computed](#vue-methods-vs-computed) ◦ [$refs](#vue-refs) ◦ [Watchers](#vue-watch) ◦ [Emits](#vue-emits) ◦ [Events and modifiers](#events-and-modifiers) ◦ [Slots](#dynamind-components) ◦ [Binding Class or Style](#binding-class-or-style) ◦ [Provide/Inject](#vue-provide-inject-in-vue)
@@ -41,7 +41,7 @@ Written while learning for educational purposes and for quick reference and look
 
 <p id="comparison"></p>
 
-## **[Comparison: Vite - Vue - Nuxt - Vuetify](#comparison)**
+## **[General info about: Vite - Vue - Nuxt - Vuetify](#comparison)**
 
 **Vite** is a building tool used for faster development thanks to super fast Hot Module Reload (HMR), fast cold start times, and CSS + JSX + TypeScript + PostCSS support out of the box.
 
@@ -1265,49 +1265,66 @@ const overridingStyles = () =>
 
 ### [**Global properties**]()
 
-In main entry script in Vue 3 app (usually main.js or app.js) we ofte do create our app, router, store, global components, global styles etc. Here we can also set global properties to be reached in all .vue files in the project. A global propery provided this way might be marked with `$` to be easialy distinguished in code for better readability. Example:
+In main entry script in Vue applications (usually `main.js` or `app.js`) we often  create our app instance, router, store, global components, global styles etc. Here we can also set **global properties** to be reached in all .vue files within the project. Way of doing this, and accessing global properties differ in Vue 2 and Vue 3. 
 
+In Vue 3 global properties are (by design) scoped to a particular application rather than being global as it is in Vue 2. 
+
+Vue 3
 ```javascript
-------------------- main.js -------------------------------
-// Set global properties on app object
+const app = createApp(...)
 ...
-import { something } from './some-file.js';
-app.config.globalProperties.$something = something;
-
-
------------------- any-component.vue ----------------------
-// Our something can now be accessed in 3 diffrent places in .vue files
-// In template (html), options api (js) and composition api (js).
-<template>
-    <p>This is {{ $something }}</p>
-    <p>This is {{ getSomething }} too</p>
-</template>
-
-<sript>
-import { getCurrentInstance } from 'vue';
-export default {
-  computed: {
-        getSomething() {
-            return this.$something
-        }
-  },
-  setup(props, context) {
-    ...
-    let $something = getCurrentInstance().appContext.config.globalProperties.$something;
-    console.log('something = ' +  $something)
-  }
-</sript>
-
-
-
---------------------  any-js-file.js --------------------------
-// To reach the global propery in .js file (like actions.js) you must import it like in main
-import { something as $something } from './some-file.js';
-...
-console.log('something = ' + $something)
+app.config.globalProperties.$globalProp = globalVariable
+app.config.globalProperties.$globalFnc = () => {}
 ```
 
-_Note:_ Evan You (Vue creator) says: "config.globalProperties are meant as an escape hatch for replicating the behavior of Vue.prototype in Vue 2. In setup functions (composition API), simply import what you need or explicitly use provide/inject to expose properties to app."
+Vue 2
+```javascript
+Vue.prototype.$globalProp = someGlobalVariable
+Vue.prototype.$globalFnc = () => {}
+```
+
+ _A global propery provided this way might be marked with `$` to be easialy distinguished in code for better readability._
+ 
+ > Note:_ Evan You (Vue creator) says:  
+  _"config.globalProperties are meant as an escape hatch for replicating the behavior of Vue.prototype in Vue 2. In setup functions (composition API), simply import what you need or explicitly use provide/inject to expose properties to app."_
+ 
+ Global properies can **be accessed** in 3 diffrent places in .vue files.
+ In template (html), options api (js) and composition api (js).
+ 
+Both Vue 2 and Vue 3
+```javascript
+// Template
+<template>
+    <p>{{ $globalProp }}</p>
+    <buton @click="$globalFnc()">Run global function/p>
+</template>
+```
+
+Vue 3
+```javascript
+// Composition/Setup api
+<sript setup>
+  import { getCurrentInstance } from 'vue';
+
+  // This is kind of hack as it involve using undocumented 
+  // APIs and are not the recommended approach.
+  const app = getCurrentInstance();
+  console.log(app.appContext.config.globalProperties.$globalProp);
+</script>
+
+```
+
+Vue 2
+```javascript
+// Options api
+export default {
+  computed: {
+        getGlopalProp() {
+            return this.$globalProp
+        }
+  },
+}
+```
 
 <br><p align=right><a id="minimalistic-code" href="#table-of-content">↩ Back To Top</a></p>
 
@@ -2131,28 +2148,201 @@ Vite is the default builder for Vue 3. Its fast and easy to customize.
 ## **[Vite](#)**
 Vite is the default builder for Vue 3. Its fast and easy to customize.
 
-## **[Minimalistic code](#)**
 <p align=right><a id="minimalistic-code" href="#table-of-content">↩ Back To Top</a></p>
 
+## **[Minimalistic code](#)**
 
-To minimize code in Vite use:
+Modern builders like Vite or Webpack transform typeScript to javascript during build. Babel is often used to transform modern (or experimental) javascript and JSX syntax to older, widly supported version of javascript. 
+
+[ESBuild](https://esbuild.github.io/) is a very fast bundler (build in go), but doesn't support some newest or experimental js features. Code in cases when such a syntax is used must first be transpiled in order for esbuild to do its work. In Vite by default only esbuild is used during builds. Therfore if newer exerimental javascript code syntax is used, then plugin like [vite-plugin-babel](https://www.npmjs.com/package/vite-plugin-babel) hsould be added.
+
+> Note that Nuxt have a build-in Babel transpile option to transpile only certain dependencies before esbuild is applied. See [nuxt/build/transpile](https://nuxtjs.org/docs/configuration-glossary/configuration-build/#transpile) how to enable it.
+
+
+Additional optimizations during a build are made. One of those is removeing dead code (tree shaking) and dropping some code like console.log or debugger ([esbuild/drop](https://esbuild.github.io/api/#drop)).
+
+Vite applies first dead code removal with higher prority, than drop. It is important to know in case of doing optimzation for product build as then order of . 
+
+The minification algorithm in esbuild does not yet do advanced code optimizations. Therfore Nuxt by default uses postCSS plugin cssnano that minifies optimized code and do some extramagic that esbuild does not (see mode [here](https://esbuild.github.io/api/#minify-considerations))
+
+[`/* @__PURE__ */`](https://esbuild.github.io/api/#pure) is used by bundlers such as esbuild during tree shaking (a.k.a. dead code removal) to perform fine-grained removal of unused imports across module boundaries in situations where the bundler is not able to prove by itself that the removal is safe due to the dynamic nature of JavaScript code.
+
+Tree hsaking might not be possible is bundler do not know for sure that code to remove do not couse any [side effects](https://esbuild.github.io/api/#tree-shaking-and-side-effects).
+
+ 
+Example of dead code removal and dropping console.log
+```javascript
+vite: {
+  build: {
+    // Css and js minification (even in html <style>).
+    // Default is true with "esbuild" as default minifier.
+    minify: true,
+    // To separately set css minification use this.
+    // Default is same as minify.
+    cssMinify: true ,
+  },
+
+  esbuild: {
+    // Removes all console.x(func-as-param()) including ALL parameters
+    drop: ["console"],
+    
+    // Note! 
+    // With pure we can remove only console.log(func-as-param) and keep errors. 
+    // But it do not remove all parameters if they have logical functions.
+    // pure: ["console.log"]
+  },
+  
+  postcss: {
+    plugins: {
+      /* In nuxt css minification can be handled by build-in plugin.
+          Default is true. Disable is with false */
+      cssnano: true,
+    },
+  },
+}
+```
 
 ```javascript
-	vite: {
-		build: {
-			minify: true /* js minification e (default true, "esbuild" default) */,
-			cssMinify: true /* css minification e (default true) */,
-		},
-
-		esbuild: {
-			/* removes ALL console.xxx() including ALL parameters */
-			drop: ["debugger", "console"],
-      
-      /* Note! With pure we can remove only console log. But it do not remove all parameters if they have logical function */
-      // pure: ["console.log"]
-		},
-	}
+  log.info(() => console.log(`Hello`, runFnc()));
+  
+  // Becomes 
+  // Drop is removing console and ALL PARAMS within even if not pure
+  
+  log.info(()=> void 0)
 ```
+
+```javascript
+const msg = "hello"
+function test(msg) {
+  console.log(msg)
+}
+test(msg);
+
+// Becomes
+
+const msg = "hello"
+function test(msg) {}
+test(msg);
+```
+
+```javascript
+const msg = "hello"
+function test(msg) {
+  console.log(msg)
+  return;
+}
+test(msg);
+
+// Becomes
+
+const msg = "hello"
+function test(msg) {return}
+test(msg);
+```
+
+```javascript
+const msg = "hello"
+function test(msg) {
+  return;
+  console.log(msg)
+}
+test(msg);
+
+// Becomes
+// Nothing! Everything totally removed due to dead code
+```
+```javascript
+import { getMsg } from "module.js"
+
+function test(msg) {
+  return;
+  console.log(msg)
+}
+test(msg + getMsg());
+
+// Becomes
+// Not removed as getMsg might have side effects (not pure)
+
+function test(msg) {return;}
+test(msg + getMsg());
+```
+
+```javascript
+import { getMsg } from "module.js"
+
+function test(msg) {
+  return;
+  console.log(msg)
+}
+const str = getMsg()
+test(msg + str);
+
+// Becomes
+// Nothing! Everything totally removed as str evaluated to pure
+```
+
+```javascript
+import { getMsg } from "module.js"
+
+function test(msg) {
+  return;
+  console.log(msg)
+}
+test(msg + /* @__PURE__ */ getMsg());
+
+// Becomes
+// Nothing! Everything totally removed as getMsg() evaluated to pure
+```
+
+Some other examples of dead code removal:
+```javascript
+  function test() {
+    alert("hello");
+  }
+  if (true) test();
+  
+  // Becomes 
+  
+  function test() {
+    alert("hello");
+  }
+  test();
+```
+
+```javascript
+  function test() {
+    alert("hello");
+  }
+
+	if (false) test();
+  
+  // All is removed 
+```
+
+```javascript
+  function test() {
+    if (true) return;
+    alert("hello");
+  }
+	const a = test();
+  
+  // All is removed!
+```
+
+```javascript
+  function test() {
+    if (true) return;
+    alert("hello");
+  }
+
+  const a = test();
+  alert(a);
+  
+  // Is NOT removed!
+```
+
+
+
 
 <br>
 <p align=right><a id="ui-frameworks" href="#table-of-content">↩ Back To Top</a></p>
